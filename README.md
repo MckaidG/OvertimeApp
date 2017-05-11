@@ -15,4 +15,5 @@ x AdminUser -> STI
 - Needs to be documented if employee did not log overtime
 
 ## UI:
+- Add full_name method
 - Bootstrap -> formatting
