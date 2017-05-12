@@ -1,7 +1,7 @@
 describe 'navigate' do
   before do
-    user = User.create(email: "test@test.com", password: "asdfasdf", password_confirmation: "asdfasdf", first_name: "Jon", last_name: "Snow")
-    login_as(user, :scope => :user)
+    @user = User.create(email: "test@test.com", password: "asdfasdf", password_confirmation: "asdfasdf", first_name: "Jon", last_name: "Snow")
+    login_as(@user, :scope => :user)
   end
 
   describe 'index' do
