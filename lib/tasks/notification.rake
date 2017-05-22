@@ -14,6 +14,5 @@ namespace :notification do
       # no spaces or dashes
       # exactly 10 characters
       # all charcters have to be a number
-
   end
 end
