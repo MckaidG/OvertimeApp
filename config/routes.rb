@@ -9,6 +9,12 @@
     root to: "users#index"
   end
 
+  resources :posts do
+    member do
+      get :approve
+    end
+  end
+  
   resources :posts
   devise_for :users, skip: [:registrations]
   root to: 'static#homepage'
