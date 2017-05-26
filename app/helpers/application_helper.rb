@@ -19,6 +19,7 @@ module ApplicationHelper
 	def admin?
 		admin_types.include?(current_user.type)
 	end
+
 	private
 
 
