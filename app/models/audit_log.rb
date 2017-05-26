@@ -1,4 +1,6 @@
 class AuditLog < ApplicationRecord
+  scope :by_start_date, -> { order('start_date DESC') }
+  
   enum status: { pending: 0, confirmed: 1}
 
   validates_presence_of :user_id, :status, :start_date
