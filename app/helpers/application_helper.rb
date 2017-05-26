@@ -12,8 +12,8 @@ module ApplicationHelper
 		status_span_generator status
 	end
 
-	def user?
-		current_user.type == 'User'
+	def employee?
+		current_user.type == 'Employee'
 	end
 
 	def admin?
